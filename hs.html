@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Club - VIT Vellore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }body {
+        background-color: #f2f2f2;
+        color: #333;
+        scroll-behavior: smooth;
+    }
+
+    #splash {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        animation: fadeSplash 3s forwards;
+    }
+
+    @keyframes fadeSplash {
+        0% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+    }
+
+    header {
+        background-color: #4f3cde66;
+        color: white;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 3rem 1rem;
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .gallery img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .board-member, .faculty {
+        text-align: center;
+    }
+
+    .board-member img, .faculty img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 24px;
+        color: #004d40;
+    }
+</style>
+
+</head>
+<body><div id="splash">
+    <img src="logo.jpg" alt="Health Club Logo" width="150">
+</div><header>
+    <img src="logo.jpg" alt="Logo" width="50">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#board">Board</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#events2023">Events 2023</a></li>
+            <li><a href="#events2024">Events 2024</a></li>
+            <li><a href="#gravitas23">Gravitas'23</a></li>
+            <li><a href="#gravitas24">Gravitas'24</a></li>
+            <li><a href="#riviera25">Riviera'25</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header><section id="about">
+    <h2>About Health Club</h2>
+    <p>Talent wins games, but teamwork and hard work win championships.We're the Health Club at VIT our mission remains straightforward by helping all students maintain their well-being along with their happiness. Orchestrating health and wellness workshops alongside event organization serves as our mission to foster greater health awareness through better behavioral choices. Whether it's physical fitness, mental health, or emotional well-being, we're here to create a supportive space where everyone can thrive. Follow us for tips, resources, and updates as we work together toward a healthier community!</p>
+</section><section id="board">
+    <h2>2024-2025 Board Members</h2>
+    <div class="gallery">
+        <div class="board-member"><img src="vaishnavisaripalli.jpg"><p>Vaishnavi Saripalli<br></small><p>Chairperson</p></div>
+        <div class="board-member"><img src="jagadeeshhs.jpg"><p>Jagadeesh.H.S<br></small><p>Vice-Chairperson</p></div>
+        <div class="board-member"><img src="vaishnavi.jpg"><p>Vaishnavi<br></small><p>Secretary</p></div>
+        <div class="board-member"><img src="nehasaji.jpg"><p>Neha Shaji<br></small><p>Co-Secretary</p></div>
+        <div class="board-member"><img src="aswin.jpg"><p>Aswin<br></small><p>Design Head</p></div>
+        <div class="board-member"><img src="aryan.jpg"><p>Aryan<br></small><p>Editorial Head</p></div>
+        <div class="board-member"><img src="pavithra.jpg"><p>Pavithra<br></small><p>HR & Management</p></div>
+        <div class="board-member"><img src="bhavishya.jpg"><p>Bhavishya<br></small><p>Events Head</p></div>
+        <div class="board-member"><img src="aayush.jpg"><p>Aayush<br></small><p>Finance Head</p></div>
+        <div class="board-member"><img src="kaaviya.jpg"> <p>Kaaviya<br></small><p>Outreach Head</p></div>
+    </div>
+</section><section id="faculty">
+    <h2>Faculty Co-ordinator</h2>
+    <div class="faculty">
+        <img src="jayaramang.jpg">
+        <p>Jayaraman.G</p>
+        <p>Email: <a href="mailto:gjayaraman@vit.ac.in">gjayaraman@vit.ac.in</a></p>
+    </div>
+</section><section id="events2023">
+    <h2>2023 Events</h2>
+    <div class="gallery">
+        <!-- Add 10 event photos -->
+        <img src="event2023-1.jpg">
+        <img src="event2023-2.jpg">
+        <!-- and so on -->
+    </div>
+</section><section id="events2024">
+    <h2>2024 Events</h2>
+    <div class="gallery">
+        <img src="event2024-1.jpg">
+        <img src="event2024-2.jpg">
+        <img src="event2024-3.jpg">
+        <img src="event2024-4.jpg">
+        <img src="event2024-5.jpg">
+        <!-- and so on -->
+    </div>
+</section><section id="gravitas23">
+    <h2>Gravitas '23</h2>
+    <div class="gallery">
+        <img src="gravitas23-1.jpg">
+    </div>
+</section><section id="gravitas24">
+    <h2>Gravitas '24</h2>
+    <div class="gallery">
+        <img src="gravitas24-1.jpg">
+        <img src="gravitas24-2.jpg">
+        <img src="gravitas24-3.jpg">
+        <img src="gravitas24-4.jpg">
+        <!-- up to 10 -->
+    </div>
+</section><section id="riviera25">
+    <h2>Riviera '25</h2>
+    <div class="gallery">
+        <img src="riviera25-1.jpg">
+        <img src="riviera25-2.jpg">
+        <img src="riviera25-3.jpg">
+        <!-- up to 5 -->
+    </div>
+</section><section id="achievements">
+    <h2>Club Achievements</h2>
+    <div class="gallery">
+        <img src="achieve1.jpg">
+        <img src="achieve2.jpg">
+        <!-- up to 8 -->
+    </div>
+<section id="blog-section">
+
+  <!-- Visible Blogs -->
+  <figure>
+    <img src="blog1.jpg" alt="Blog 1" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/superfoods-myths-and-realities-964ff4b3c149" target="_blank">
+        Superfoods: Myths and Realities
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog1')">Like</button>
+        <span id="blog1-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="blog2.jpg" alt="Blog 2" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/-8c185f2e452a" target="_blank">
+        Health Perspectives: Untitled
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog2')">Like</button>
+        <span id="blog2-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="blog3.jpg" alt="Blog 3" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/stress-college-life-39345ddb97b9" target="_blank">
+        Stress & College Life
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog3')">Like</button>
+        <span id="blog3-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="blog4.jpg" alt="Blog 4" width="300" height="200">
+    <figcaption>
+      <a href="https://medium.com/@healthclub_36778/pulse-on-the-health-budget-d7ba7cb53c85" target="_blank">
+        Pulse on the Health Budget
+      </a>
+      <p>
+        👍 <button onclick="likeBlog('blog4')">Like</button>
+        <span id="blog4-likes">0</span> Likes
+      </p>
+    </figcaption>
+  </figure>
+
+  <!-- Hidden Blogs -->
+  <div id="more-blogs" style="display: none;">
+    <figure>
+      <img src="blog5.jpg" alt="Blog 5" width="300" height="200">
+      <figcaption>
+        <a href="https://medium.com/@healthclub_36778/reviving-ancient-wisdom-the-efficacy-of-natural-indian-treatments-over-allopathic-medicine-8e7859532f52" target="_blank">
+          Reviving Ancient Wisdom
+        </a>
+        <p>
+          👍 <button onclick="likeBlog('blog5')">Like</button>
+          <span id="blog5-likes">0</span> Likes
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="blog6.jpg" alt="Blog 6" width="300" height="200">
+      <figcaption>
+        <a href="https://medium.com/@healthclub_36778/timeless-wisdom-exploring-the-benefits-of-ancient-indian-treatments-used-by-our-grandmothers-over-d331fe114e47" target="_blank">
+          Timeless Wisdom
+        </a>
+        <p>
+          👍 <button onclick="likeBlog('blog6')">Like</button>
+          <span id="blog6-likes">0</span> Likes
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="blog7.jpg" alt="Blog 7" width="300" height="200">
+      <figcaption>
+        <a href="https://medium.com/@healthclub_36778/rediscovering-wisdom-ancient-natural-indian-treatments-and-their-benefits-over-allopathic-98fc06766b90" target="_blank">
+          Rediscovering Wisdom
+        </a>
+        <p>
+          👍 <button onclick="likeBlog('blog7')">Like</button>
+          <span id="blog7-likes">0</span> Likes
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="blog8.jpg" alt="Blog 8" width="300" height="200">
+      <figcaption>
+        <a href="https://medium.com/@healthclub_36778/unmasking-the-hidden-danger-treating-tobacco-use-and-its-risks-concern-with-understanding-the-dac12b64311a" target="_blank">
+          Unmasking the Hidden Danger
+        </a>
+        <p>
+          👍 <button onclick="likeBlog('blog8')">Like</button>
+          <span id="blog8-likes">0</span> Likes
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="blog9.jpg" alt="Blog 9" width="300" height="200">
+      <figcaption>
+        <a href="https://medium.com/@healthclub_36778/a-complete-synopsis-of-understanding-diabetes-d09905642d5a" target="_blank">
+          Understanding Diabetes
+        </a>
+        <p>
+          👍 <button onclick="likeBlog('blog9')">Like</button>
+          <span id="blog9-likes">0</span> Likes
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Show More Button -->
+  <button onclick="toggleBlogs()" id="showMoreBtn">Show More</button>
+
+</section>
+
+<script>
+  function toggleBlogs() {
+    const moreBlogs = document.getElementById('more-blogs');
+    const btn = document.getElementById('showMoreBtn');
+
+    if (moreBlogs.style.display === "none") {
+      moreBlogs.style.display = "block";
+      btn.textContent = "Show Less";
+    } else {
+      moreBlogs.style.display = "none";
+      btn.textContent = "Show More";
+    }
+  }
+</script>
+<script>
+  function toggleMoreBlogs() {
+    const more = document.getElementById("moreBlogs");
+    const btn = document.querySelector(".show-more");
+    if (more.style.display === "flex") {
+      more.style.display = "none";
+      btn.textContent = "More Blogs";
+    } else {
+      more.style.display = "flex";
+      btn.textContent = "Show Less";
+    }
+  }
+</script>
+</section><section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:+918122882106">8122882106</a></p>
+    <p>Email: <a href="mailto:healthclub@vit.ac.in">healthclub@vit.ac.in</a></p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/health_club_vit" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://chat.whatsapp.com/FUFLVfci1X143i4MXo0qLv" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/health-club-vit/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section><script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('splash').style.display = 'none';
+        }, 3000);
+    });
+</script></body>
+</html>
