@@ -320,4 +320,53 @@
       <a href="mailto:healthclub@vit.ac.in" aria-label="Email">
         <i class="fas fa-envelope fa-2x" style="color:#003366; margin: 0 10px;"></i>
       </a>
-   
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Health Club, VIT University | Designed by Jagadeesh.H.S
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const sideNav = document.getElementById('side-nav');
+  const buttons = sideNav.querySelectorAll('button');
+  const sections = document.querySelectorAll('main section');
+
+  // Toggle menu open/close
+  menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+    sideNav.classList.toggle('open');
+  });
+
+  // Close menu and show section on button click
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sectionId = btn.getAttribute('data-section');
+
+      // Hide all sections
+      sections.forEach(sec => {
+        sec.classList.remove('active');
+      });
+      // Show selected
+      const activeSection = document.getElementById(sectionId);
+      if (activeSection) activeSection.classList.add('active');
+
+      // Close menu
+      menuBtn.classList.remove('open');
+      sideNav.classList.remove('open');
+    });
+  });
+
+  // Accessibility: allow keyboard toggle on hamburger
+  menuBtn.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      menuBtn.click();
+    }
+  });
+</script>
+
+</body>
+</html>
