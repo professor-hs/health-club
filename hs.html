@@ -209,6 +209,40 @@
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<script>
+  // Toggle hamburger and nav
+  const menuBtn = document.getElementById("menu-btn");
+  const nav = document.getElementById("side-nav");
+
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("open");
+    nav.classList.toggle("open");
+  });
+
+  // Section switching logic
+  const sectionButtons = document.querySelectorAll("nav button");
+  const sections = document.querySelectorAll("main section");
+
+  sectionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const target = button.getAttribute("data-section");
+
+      sections.forEach(sec => {
+        if (sec.id === target) {
+          sec.classList.add("active");
+        } else {
+          sec.classList.remove("active");
+        }
+      });
+
+      // Close the menu after clicking
+      menuBtn.classList.remove("open");
+      nav.classList.remove("open");
+    });
+  });
+</script>
+</body>
+</html>
 
 <header>
   <div class="header-left">
